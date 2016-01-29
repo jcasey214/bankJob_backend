@@ -4,6 +4,7 @@ var knex = require('../db/knex');
 function Banks(){
   return knex('banks');
 }
+require('dotenv').load();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

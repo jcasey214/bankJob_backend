@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
 function(table){
   table.increments();
   table.string('name');
+  table.text('description');
   table.string('image');
   table.integer('explosives');
   table.integer('safe_cracking');
@@ -16,6 +17,7 @@ function(table){
     table.increments();
     table.string('image');
     table.string('name');
+    table.text('description');
     table.integer('security');
     table.integer('reward');
     table.integer('accessibility');
